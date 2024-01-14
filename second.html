@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student_Registration_Form</title>
+ 
+
+  <style>
+    h2{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+        color: rgb(72, 31, 206);
+        text-align: center;
+        text-decoration: underline;
+
+    }
+
+    table{
+        width: 900px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        font-size: 16px;
+        font-style: normal;
+       font-weight: bold;
+       background:whitesmoke;
+       border: 4px solid#000000;
+       border-style: solid;
+    
+    }
+
+
+    div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+
+.grid-container{
+    display: grid;
+    grid-gap: 4px;
+    padding: 10px;
+
+}
+
+label{
+    width: 200px;
+    display: inline-block;
+}
+
+
+
+table.inner{
+    border: 20px;
+    grid-template-columns: auto auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=text],input[type=email],input[type=number],input[type=password]{
+    width:50%;
+    padding: 8px 12px;
+    margin: 5px 0;
+    box-sizing: border-box;
+
+}
+
+  </style>
+
+
+</head>
+
+    <body>
+        <h2>STUDENT REGISTRATION FORM</h2>
+    
+     
+    <div>
+     <table align="centre" cellpadding="20">
+    
+        <div class="grid-container">
+    
+    <tr>
+        <td>
+            <label>First Name : </label>
+            <input type="text" class="input"  name="fname" placeholder="Enter your first name"required>
+        </td>
+
+    </tr> 
+    
+    
+    
+    <tr>
+        <td>
+            <label>Last Name : </label>
+            <input type="text" class="input" id="name" name="lname" placeholder="Enter ypur last name"required>
+        </td>
+    </tr>
+
+
+
+     <tr>
+        <td> 
+            <label for="">Gender : </label>
+            <input type="radio" name="gender" id="radio" value="Male">Male
+            <input type="radio" name="gender" id="radio" value="Female">Female
+        </td>
+     </tr>
+
+
+    
+     <tr>
+        <td>
+            <label>Email : </label>
+             <input type="email" class="input" name="email" placeholder="must contain @.">
+        </td>
+     </tr>
+
+
+
+     <tr>
+        <td>
+
+            <label>Password</label>
+            <input type="password" class="input" id="password">
+        </td>
+    </tr>
+
+  
+    <tr>
+        <td>
+             <label for="">Mobile : </label>
+             <input type="text" class="input" name="phone-number" maxlength="10" id="phone-number" placeholder="only 10 digits are allowed" pattern="[7-9]{1}[0-9]{9}">
+  
+        </td> 
+    </tr>
+
+
+
+    <tr>
+        <td>
+             <label for="">Date Of Birth : </label>
+             <input type="date" class="input" name="dob" required>
+        </td>
+    </tr>
+
+
+
+ 
+    <tr>
+        <td>
+             <label>Address :</label>
+             <textarea class="textarea" name="address"  cols="30" rows="5" placeholder="Enter your address" maxlength="100"></textarea>
+        </td>
+     </tr>
+
+
+
+
+    <tr>
+        <td>
+             <label>City : </label>
+             <input type="text" class="input" name="city" >
+        </td>
+    </tr>  
+
+
+    <tr>
+        <td>
+              <label>Area PIN : </label>
+              <input type="text" class="input" name="pincode">
+        </td>
+    </tr>
+        
+    
+    
+    <tr>
+        <td>
+            <label>State : </label>
+            <input type="text" class="input" name="state">
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <label>Qualification : </label>
+            <select id="qualification" name="Select Qualification" >
+                <option value="">-Select Qualification</option>
+                <option value="">BCS</option>
+                <option value="">BBA</option>
+                <option value="">BCOM</option>
+                <option value="">ENGG.</option>
+                <option value="">MCS</option>
+                <option value="">MCOM</option>
+                <option value="">BCA</option>
+            </select>
+        </td>
+    </tr>
+
+        
+    
+    <tr>
+        <td>
+                 <label>Specialaization :</label>
+                <input type="checkbox">Computer Science<br>
+
+                <input type="checkbox">Information Technology<br>
+
+                <input type="checkbox">Computer Architecture<br>
+
+                <input type="checkbox">Tele Communication<br>
+        </td>
+    </tr>
+        
+   
+    
+    
+    <tr>
+        <td>
+          <button type="submit" value="Register" class="btn">Registered</button>
+        </td>
+    </tr>
+
+        </div>
+        </table>
+    </div>
+</body>
+    
+</html>
